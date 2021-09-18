@@ -1,0 +1,552 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:transparent;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+margin:0px 0px;
+
+background-color: rgb(247, 242, 247);
+box-shadow:rgb(184, 181, 184) 2px 2px 14px 3px ;
+}
+header h1{
+color:rgb(28, 92, 156);}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+ul li{
+list-style:none;
+padding:13px 15px;
+font-size:20px;
+
+}
+ul li a{
+text-decoration:none;
+color:gray;}
+ul li a:hover{
+color:rgb(20, 86, 150);}
+.active_class{
+color:rgb(20, 86, 150);
+}
+.main{
+margin:0px 18px 0px 10px;}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:505px){
+    .checkbtn{
+        display:block;  
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 18vh;
+        top:55px;
+        left: -100%;
+        background-color: #2c3e50;;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+        z-index: 1;
+    }
+    ul li{
+        padding:1px 15px;
+    }
+    ul li a{
+        text-decoration:none;
+        color: white;
+        font-size: large;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* Home CSS 
+.main2{
+
+}*/
+.home1{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 89vh;
+  padding: 50px;
+  color:white;
+  font-size: 20px;
+  background-image: url(./images/1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  box-shadow:rgb(138, 139, 138) 2px 2px 14px 10px ;  
+}
+.home1_1{
+  margin-top:150px;
+}
+.home1 button{
+  width: 130px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: monospace;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+@media (max-width:505px){
+.home1{
+    background-image: none;
+    font-size: 28px;
+    background:linear-gradient(to bottom,  rgb(64, 98, 109), rgb(134, 128, 128),rgba(150, 93, 61, 0.609));   
+}
+.home1_1{
+    margin-top: 180px;
+}
+.home1 button{
+    width: 180px;
+    font-size: 26px;
+    font-weight: 600;
+    color: coral;
+}
+}
+
+/* CSS FOR BLOG blog.css */
+
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  }
+  .blogmain{
+      display: flex;
+      margin-left: 30px;
+      width:95%;
+      background-image: url(./images/3.jpeg);
+      position: relative;
+      top:50px;
+      padding-top: 20px;
+      height:465px;
+      box-sizing: border-box;
+  }
+  .blgmain_1{
+      position: relative;
+      left:40px;
+      width: 65%;
+      height:450px;
+      padding-left: 20px;
+      padding-top: 10px;
+      margin-right: 20px;
+      }
+   
+  .blgmain_1 h1{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+      
+  }
+  .blgmain_1 form{ 
+      padding-top: 20px;
+  }
+  
+  .input1{
+      margin-right: 350px;
+      width: 150px;
+      height:35px;
+      margin-bottom: 15px;
+      border:none;
+      border-radius: 5px;
+      box-shadow:rgb(156, 154, 154) 1px 1px 14px 3px;
+      text-align: center;
+      font-size: 15px;
+  }
+  .ck.ck-editor {width: 85%;} 
+  .ck-editor__editable_inline{
+      min-height:245px; 
+        
+  }
+  
+  form button{
+      text-align: center;
+      padding: 5px 15px;
+      border:none;
+      border-radius: 2px;
+      background-color:rgb(90, 63, 185);
+      font-size: 15px;
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+  form button:hover{
+      background-color:rgb(138, 111, 235);
+     
+  }
+  .blgmain_2{
+      width: 30%;
+      height:430px;
+      padding-top: 10px;
+      padding-left: 10px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      box-shadow: rgb(85, 84, 84) 2px 2px 14px 3px;
+     
+      }
+     
+.input1field{
+    display: flex;
+    
+}  
+.edit123{
+    display: flex; 
+    justify-content: space-between;
+ }
+ .edit1234{
+    display: flex; 
+    color:rgb(226, 28, 28);
+ }
+  .homecontent{
+     border: 1px solid black;
+      margin: 25px 0px;
+      padding: 8px 20px;
+      
+  }
+  .homecontent h1{
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 100;
+      font-style: normal;
+      color:rgb(76, 47, 184);
+      margin-bottom: 30px;
+  }
+  .homecontent h1 span{
+    text-transform: none;
+      margin-left: 8px;
+      font-size: small;
+      color: black;
+  }
+  .homecontent p{
+      width: 100%;
+      margin-top: 20px;
+      font-size: 18px;  
+  }
+  .blogcont{
+    background-color: rgb(155, 151, 151);
+    border-radius: 3px;
+    padding: 10px;
+    
+  }
+
+@media (max-width:505px){
+    .blogmain{
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+        top: 20px;
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+    .blgmain_1{
+        width:100vw;
+        left:10px;
+        height:auto;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .input1field{
+        flex-direction: column;
+        
+    } 
+    .blgmain_2{
+        width: 100%;
+        height:430px;
+        padding: 30px;
+        box-shadow: rgb(85, 84, 84) 2px 2px 14px 3px;
+       
+        }
+}
+  /* CSS FOR LOGIN login.css */
+
+
+  
+*{
+  margin:0px;
+  padding:0px;
+  }
+  .mainl{
+      position: relative;
+      top:70px;
+      width:350px;
+      height:400px;
+      text-align: center;
+      padding-top: 40px;
+      background-color:rgba(60, 62, 88, 0.15);
+      box-shadow: rgb(168, 167, 167) 2px 2px 14px 5px;
+         }
+  h3{
+      font-size: x-large;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .one{
+      margin-top: 60px;
+      width:70%;
+      border-style:none ;
+      height: 40px;
+      padding-left: 20px;
+      border-radius: 5px;
+  }
+  .two{
+   margin-top:20px;
+   width:70%;
+   border-style:none ;
+   height: 40px;
+   padding-left: 20px;
+   border-radius: 5px;
+  }
+  .signin_btn{
+      display: flex;
+      justify-content: space-between;
+      margin: 70px 50px;
+      text-decoration: none;
+  
+  }
+  .signin_btn a{
+      text-decoration: none;
+      color: black;
+  }
+  .signin_btn button{
+      width:100px;
+      height: 30px;
+      border-radius: 5px;
+      border-style: none;
+      background-color:rgba(93, 118, 228, 0.959);
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  @media (max-width:505px){
+    .mainl{
+        margin-top: 20px;
+      width:80%;
+      height:90%;
+    }
+    .mainl h3{
+        font-size: 27px;
+        margin-bottom: 10px;    
+    }
+   
+    .one{
+      margin-bottom: 20px;
+      padding: 5px;
+      padding-left: 20px;
+      font-size: 18px;
+      width: 70%;
+    }
+    .two{
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-left: 20px;
+        font-size: 18px;
+        width: 70%;
+      }
+    .signin_btn{
+        margin: 30px 50px;
+    }
+    .signin_btn button{
+        margin-top: -13px;
+       font-size: 20px;
+       width:100px;
+       height: 40px;
+    }
+  
+ 
+} 
+
+
+  
+   
+  /* Signup CSS */
+  .mains_s{
+      display: flex;
+      justify-content: center; 
+  }
+  .mains{
+      position: relative;
+      top:55px;
+      width:580px;
+      height:450px;
+      text-align: center;
+      padding-top: 40px;
+      background-color:rgba(60, 62, 88, 0.15);
+      box-shadow: rgb(168, 167, 167) 2px 2px 14px 5px;
+      }  
+      .sflname{
+          margin-top: 60px;
+          display: flex;
+          justify-content: space-around;
+      }
+      .sname{
+          width:50%;
+          border-style:none ;
+          height: 38px;
+          padding-left: 20px;
+          border-radius: 5px;
+      }
+      .gname{
+          margin-top: 20px;
+          margin-left: 23px;
+          width:85%;
+          border-style:none ;
+          height: 38px;
+          padding-left: 20px;
+          border-radius: 5px;
+          
+      }
+      .spass{
+          margin-top: 60px;
+          display: flex;
+          justify-content: space-around;
+      }
+ 
+      .altr{
+          width: 110%;
+         position: relative;
+         left: 60px;
+         background-color:#f0a0a0;
+        border-radius: 3px;
+        padding:8px ;
+      }
+      .vcaltr{
+        width: 70%;
+       position: relative;
+       left: 30px;
+       background-color:#f0a0a0;
+      border-radius: 3px;
+      padding:8px ;
+    }
+      .alertemail{
+        width: 40%;
+       position: relative;
+       left: 170px;
+       background-color:#f0a0a0;
+      border-radius: 3px;
+      padding:8px ;
+    }
+    .signup_btn{
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 80px;
+        text-decoration: none;
+    }
+    .signup_btn a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-top: -4px;
+    }
+    .signup_btn a:hover{
+        text-decoration: none;
+        color: rgb(29, 38, 160);
+        font-size: 18px;
+        margin-top: -4px;
+    }
+    .signup_btn button{
+        margin-top: -10px;
+        width:100px;
+        height: 30px;
+        border-radius: 5px;
+        border-style: none;
+        background-color:rgba(93, 118, 228, 0.959);
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    @media (max-width:505px){
+        .mains_s{
+            padding: 30px;
+        }
+        .mains{
+          width:90%;
+          height:100%;
+          margin-top: -20px;
+        }
+        .mains h3{
+            font-size: 27px;
+        }
+        .sflname{
+            margin-top: 40px;
+          flex-direction: column;
+        }
+        .sname{
+          margin-bottom: 30px;
+          padding: 5px;
+          padding-left: 20px;
+          font-size: 18px;
+          width: 80%;
+        }
+        .gname{
+            margin-top: 0px;
+            margin-left: 0px;
+            width:80%; 
+            padding: 5px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        .spass{
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .signup_btn{
+            margin: 30px 50px;
+        }
+        .signup_btn button{
+            margin-top: -15px;
+           font-size: 20px;
+           width:100px;
+           height: 40px;
+        }
+        .altr{
+            width: 90%;
+            position: relative;
+            left: 80px;
+            top:-35px;
+            background-color:#f0a0a0;
+           border-radius: 3px;
+           padding:8px; 
+        }
+        .vcaltr{
+            width: 90%;
+           position: relative;
+           left: 80px;
+           top:-35px;
+           background-color:#f0a0a0;
+          border-radius: 3px;
+          padding:8px ;
+        }
+        .alertemail{
+            width: 90%;
+            position: relative;
+            left: 80px;
+            top:-3px;
+            background-color:#f0a0a0;
+           border-radius: 3px;
+           padding:8px ;
+        }
+  } 
+
+   
